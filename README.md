@@ -1,5 +1,9 @@
-rmiregistry 1099&
+### Modification of the Java RMI program WeatherService
 
-java -Djava.security.policy=./policy1-file.txt WeatherServiceServer
+To run:
 
-java -Djava.security.policy=./policy1-file.txt WeatherServiceClient
+1. `rmiregistry 1099&`
+
+2. `java -Djava.security.policy=./policy1-file.txt WeatherServiceServer`
+
+3. `java -Djava.security.policy=./policy1-file.txt WeatherServiceClient`
