@@ -1,0 +1,7 @@
+
+// This file controls privileges for networking and I/O operations
+
+
+grant {
+     	permission java.security.AllPermission;
+};

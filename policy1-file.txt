@@ -1,0 +1,38 @@
+
+// This file controls privileges for networking and I/O operations
+
+grant {
+	permission java.net.SocketPermission "forecast.weather.gov:443", "connect,resolve,accept";
+	permission java.net.SocketPermission "www.weather.gov:80", "connect,resolve,accept";
+	permission java.net.SocketPermission "www.lawrencevilleweather.com:80", "connect,resolve,accept";
+	permission java.net.SocketPermission "www.nws.noaa.gov:80", "connect,resolve,accept";
+	permission java.net.SocketPermission "127.0.0.1:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "localhost:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "keystone.cs.txstate.edu:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "cpe-70-112-144-239.austin.res.rr.com:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "147.26.100.154:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "147.26.156.7:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "147.26.17.245:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.36.170.212:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.36.22.17:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.0.18:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.0.20:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.0.19:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.0.25:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.8.100:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.9.65:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.9.94:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.10.106:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.215.53.149:0-", "resolve,accept";
+	permission java.net.SocketPermission "10.215.13.211-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.215.:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.215.12.244:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "70.112.138.130:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission ":0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "10.50.:0-", "connect,resolve,accept";
+	permission java.net.SocketPermission "cs-178595.wpa.txstate.edu:0-", "connect,resolve,accept";
+
+	permission java.util.PropertyPermission "java.rmi.server.hostname", "write";
+
+	permission java.security.AllPermission;
+};
